@@ -1,0 +1,141 @@
+body {
+    background-color:#ce3635;
+    text-align: center;
+    color:#fff;
+    padding-top:10em;
+  }
+  
+  * { color:#fff; text-decoration: none;}
+.background{
+    
+}
+.container{
+    position: fixed;
+    background:white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 0;
+    width:0;   
+}
+.text{
+    animation: hide 6s ease-out both !important;
+}
+
+@keyframes hide{
+    0%{
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.width{
+    animation: wide 4s ease-out both !important;
+}
+@keyframes wide{
+    0%{
+        width: 0rem;
+        height:0.1rem;
+        
+    }
+    10%{
+        width: 35rem;
+        height:0.1rem;
+       
+    }
+    100%{
+        width: 35rem;
+        height: 16rem;
+        
+    }
+}
+.button {
+    border: none;
+    border-radius: 5%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button3 {background-color: #f44336;} /* Red */ 
+.shrink{
+    animation: close 4s ease-out both !important;
+}
+@keyframes close{
+    0%{
+        width: 35rem;
+        height: 16rem;
+        
+    }
+    10%{
+        width: 35rem;
+        height:0.1rem;
+       
+    }
+    100%{
+        width: 0rem;
+        height:0rem;
+        
+    }
+}
+.visibility{
+    visibility: hidden;
+}
+.color, option{
+    color:#ce3635;
+}
+.creator{
+    color:white;
+    width: 10rem;
+    margin-left: -6rem;
+}
+@media screen and (max-width: 620px){
+    .creator{
+        margin-left: -5px;
+    }
+    @keyframes wide{
+        0%{
+            width: 0rem;
+            height:0.1rem;
+            
+        }
+        10%{
+            width: 20rem;
+            height:0.1rem;
+           
+        }
+        100%{
+            width: 20rem;
+            height: 22rem;
+            
+        }
+    }
+    @keyframes close{
+        0%{
+            width: 20rem;
+            height: 22rem;
+            
+        }
+        10%{
+            width: 20rem;
+            height:0.1rem;
+           
+        }
+        100%{
+            width: 0rem;
+            height:0.1rem;
+            
+        }
+    }
+
+}
